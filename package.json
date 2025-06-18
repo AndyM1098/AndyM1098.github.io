@@ -3,6 +3,14 @@
     "vite": "^6.3.5"
   },
   "dependencies": {
-    "bootstrap": "^5.3.6"
+    "bootstrap": "^5.3.6",
+    "gh-pages": "^6.3.0"
+  },
+  "homepage": "https://github.com/AndyM1098/Andym1098.github.io",
+  "scripts": {
+    "predeploy": "npm run build --prefix main_pages",
+    "deploy": "gh-pages -d main_pages/build"
   }
+
+  
 }
