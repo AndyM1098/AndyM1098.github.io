@@ -1,0 +1,35 @@
+[
+  {
+    "degree": "Master of Science in Computer Science", 
+    "institution": "University of Tennessee – Knoxville, TN", 
+    "date": "Aug 2023 – Dec 2024",
+    "gpa": "3.19",
+    "honors": null,
+    "description": null,
+    "logo": "../../../public/logos/Tennessee_Volunteers_logo.svg.png",
+    "certificate": "/certficates/mast_cert.pdf",
+    "certificateLabel": "View Certificate"
+  },
+  {
+    "degree": "Bachelor of Science in Computer Science",
+    "institution": "University of Tennessee – Knoxville, TN",
+    "date": "Aug 2020 – Jun 2023",
+    "gpa": "3.59",
+    "honors": "cum laude",
+    "description": null,
+    "logo": "../../../public/logos/Tennessee_Volunteers_logo.svg.png",
+    "certificate": "/certficates/bach_cert.pdf",
+    "certificateLabel": "View Certificate"
+  },
+  {
+    "degree": "Associate Coursework in Computer Science",
+    "institution": "Queensborough Community College - Bayside, NY",
+    "date": "Aug 2018 – June 2020",
+    "gpa": "3.55",
+    "honors": null,
+    "description": "Studied computer science fundamentals and mathematics before transferring to UTK. Completed 59 credits",
+    "logo": "../../../public/logos/qcc_logo.jpeg",
+    "certificate": null,
+    "certificateLabel": null
+  }
+]
