@@ -8,7 +8,7 @@
             "Managed inventory restocking and ensured timely order staging in designated zones",
             "Provided friendly customer service during order handoffs and resolved basic order issues."
         ],
-        "logo" : "../../../public/logos/Tennessee_Volunteers_logo.svg.png"
+        "logo" : "/logos/Tennessee_Volunteers_logo.svg.png"
     },
     {
         "jobTitle" : "Teaching Assistant",
@@ -19,7 +19,7 @@
             "Received the Gonzalez Family Award for Outstanding Undergraduate Teaching Assistant.",
             "Led interactive lab sessions, provided office hour support, and maintained student communication."
         ],
-        "logo" : "../../../public/logos/Tennessee_Volunteers_logo.svg.png"
+        "logo" : "/logos/Tennessee_Volunteers_logo.svg.png"
     },
     {
         "jobTitle" : "Graduate Research Assistant",
@@ -30,7 +30,7 @@
             "Utilized custom Python libraries (thicket / hatchet), andmatplotlib for analysis and visualization.",
             "Led weekly meetings with LLNL and Dr. Taufer to ensure alignment and progress across research efforts."
         ],
-        "logo" : "../../../public/logos/gc_lab_logo.png"
+        "logo" : "/logos/gc_lab_logo.png"
     },
     {
         "jobTitle" : "Student Computer Support",
@@ -41,7 +41,7 @@
             "Effectively communicated with supervisors to resolve complex technical problems.",
             "Checked in devices for in-depth analysis and ensured accurate issue documentation."
         ],
-        "logo" : "../../../public/logos/Tennessee_Volunteers_logo.svg.png"
+        "logo" : "/logos/Tennessee_Volunteers_logo.svg.png"
     },
     {
         "jobTitle" : "Food Runner / Waiter",
@@ -52,6 +52,6 @@
             "Collaborated with kitchen and wait staff to streamline order flow and enhance guest satisfaction.",
             "Supported over $100,000 in annual food and beverage sales"
         ],
-        "logo" : "../../../public/logos/donovans_of_bayside_ai_generated.png"
+        "logo" : "/logos/donovans_of_bayside_ai_generated.png"
     }
 ]

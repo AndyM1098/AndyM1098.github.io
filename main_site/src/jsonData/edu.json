@@ -6,9 +6,8 @@
     "gpa": "3.19",
     "honors": null,
     "description": null,
-    "logo": "../../../public/logos/Tennessee_Volunteers_logo.svg.png",
-    "certificate": "/certficates/mast_cert.pdf",
-    "certificateLabel": "View Certificate"
+    "logo": "/logos/Tennessee_Volunteers_logo.svg.png",
+    "certificate": "/certficates/mast_cert.pdf"
   },
   {
     "degree": "Bachelor of Science in Computer Science",
@@ -17,9 +16,8 @@
     "gpa": "3.59",
     "honors": "cum laude",
     "description": null,
-    "logo": "../../../public/logos/Tennessee_Volunteers_logo.svg.png",
-    "certificate": "/certficates/bach_cert.pdf",
-    "certificateLabel": "View Certificate"
+    "logo": "/logos/Tennessee_Volunteers_logo.svg.png",
+    "certificate": "/certficates/bach_cert.pdf"
   },
   {
     "degree": "Associate Coursework in Computer Science",
@@ -28,8 +26,7 @@
     "gpa": "3.55",
     "honors": null,
     "description": "Studied computer science fundamentals and mathematics before transferring to UTK. Completed 59 credits",
-    "logo": "../../../public/logos/qcc_logo.jpeg",
-    "certificate": null,
-    "certificateLabel": null
+    "logo": "/logos/qcc_logo.jpeg",
+    "certificate": null
   }
 ]
