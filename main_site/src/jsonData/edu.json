@@ -6,7 +6,7 @@
     "gpa": "3.19",
     "honors": null,
     "description": null,
-    "logo": "/logos/Tennessee_Volunteers_logo.svg.png",
+    "logo_path": "/logos/Tennessee_Volunteers_logo.svg.png",
     "certificate": "/certficates/mast_cert.pdf"
   },
   {
@@ -16,7 +16,7 @@
     "gpa": "3.59",
     "honors": "cum laude",
     "description": null,
-    "logo": "/logos/Tennessee_Volunteers_logo.svg.png",
+    "logo_path": "/logos/Tennessee_Volunteers_logo.svg.png",
     "certificate": "/certficates/bach_cert.pdf"
   },
   {
@@ -26,7 +26,7 @@
     "gpa": "3.55",
     "honors": null,
     "description": "Studied computer science fundamentals and mathematics before transferring to UTK. Completed 59 credits",
-    "logo": "/logos/qcc_logo.jpeg",
+    "logo_path": "/logos/qcc_logo.jpeg",
     "certificate": null
   }
 ]

@@ -29,9 +29,9 @@ interface EducationData {
   gpa: string;
   honors?: string | null;
   description?: string | null;
-  logo: string;
+  logo_path: string;
   certificate?: string | null;
-  certificateLabel?: string | null;
+  certificate_label?: string | null;
 }
 
 function InfoBoxTextEdu({ json_data }: { json_data: EducationData }) {
@@ -80,7 +80,7 @@ function ResumeListingsEducation() {
             key={idx}
           >
             {/* Left: Logo */}
-            <InfoBoxImage ImageSrc={item.logo} ImageAlt={item.institution} />
+            <InfoBoxImage ImageSrc={item.logo_path} ImageAlt={item.institution} />
             {/*Right: Text*/}
             <InfoBoxTextEdu json_data={item} />
           </div>

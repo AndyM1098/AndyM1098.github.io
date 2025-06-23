@@ -19,7 +19,7 @@ function Jobs() {
             <div className="flex-shrink-0">
               <div className="m-3">
                 <img
-                  src={item.logo}
+                  src={item.logo_path}
                   alt={`${item.location} Logo`}
                   className="img-fluid"
                   style={{ maxWidth: "100px" }}
@@ -29,14 +29,14 @@ function Jobs() {
 
             {/* Right: Text content */}
             <div className="d-flex flex-column m-1">
-              <h5 className="text-primary">{item.jobTitle}</h5>
+              <h5 className="text-primary">{item.job_title}</h5>
               <div className="d-inline-flex align-items-center mb-2">
                 <p className="mb-0 text-secondary">{item.location}</p>
                 <span className="mx-2" style={{ color: "black" }}>•</span>
                 <p className="mb-0 text-secondary">{item.dates}</p>
               </div>
               <ul className="mb-0 ps-3">
-                {item.bulletPoints.map((bullet_point, bidx) => (
+                {item.bullet_points.map((bullet_point, bidx) => (
                   <li key={bidx} className="mb-1">
                     {bullet_point}
                   </li>
