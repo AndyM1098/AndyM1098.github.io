@@ -4,8 +4,6 @@
     "institution": "University of Tennessee – Knoxville, TN", 
     "date": "Aug 2023 – Dec 2024",
     "gpa": "3.19",
-    "honors": null,
-    "description": null,
     "logo_path": "/logos/Tennessee_Volunteers_logo.svg.png",
     "certificate": "/certficates/mast_cert.pdf"
   },
@@ -15,7 +13,6 @@
     "date": "Aug 2020 – Jun 2023",
     "gpa": "3.59",
     "honors": "cum laude",
-    "description": null,
     "logo_path": "/logos/Tennessee_Volunteers_logo.svg.png",
     "certificate": "/certficates/bach_cert.pdf"
   },
@@ -24,9 +21,7 @@
     "institution": "Queensborough Community College - Bayside, NY",
     "date": "Aug 2018 – June 2020",
     "gpa": "3.55",
-    "honors": null,
-    "description": "Studied computer science fundamentals and mathematics before transferring to UTK. Completed 59 credits",
-    "logo_path": "/logos/qcc_logo.jpeg",
-    "certificate": null
+    "description": "Completed 59 credits before transferring to UTK",
+    "logo_path": "/logos/qcc_logo.jpeg"
   }
 ]
