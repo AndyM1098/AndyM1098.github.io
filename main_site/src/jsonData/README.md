@@ -11,8 +11,13 @@ This document outlines the data schema for a growing set of structured JSON file
 ```ts
 type JobEntry = {
   job_title: string;
+  company: string;
   location: string;
+
   dates: string;
+  start_date: string;
+  end_date: string;
+  
   bullet_points: string[];
   logo_path: string;
 };
@@ -27,6 +32,8 @@ type JobsJson = JobEntry[];
   {
     "job_title": "Software Intern",
     "location": "Acme Corp – San Francisco, CA",
+    "start_date": "06-2020",
+    "end_date" : "08-2022",
     "dates": "June 2022 – August 2022",
     "bullet_points": [
       "Implemented automated test framework for React components",
@@ -71,11 +78,13 @@ type EducationJson = EducationEntry[];
     "degree": "Bachelor of Science in Computer Science",
     "institution": "University of Tennessee",
     "date": "Aug 2020 – May 2024",
+    "start_date":"08-2020",
+    "end_date":"05-2024",
     "gpa": "3.85",
     "honors": "summa cum laude",
     "description": "Coursework focused on systems programming and machine learning.",
     "logo_path": "/logos/Tennessee_Volunteers_logo.svg.png",
-    "certificate": "/certificates/bs_cs.pdf"
+    "certificate_path": "/certificates/bs_cs.pdf"
   }
 ]
 ```
