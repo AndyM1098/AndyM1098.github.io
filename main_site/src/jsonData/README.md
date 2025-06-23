@@ -1,6 +1,6 @@
 # JSON Data Schema Specification
 
-This repository includes two structured JSON files representing experience and education records for dynamic rendering in a TypeScript-based frontend.
+This document outlines the data schema for a growing set of structured JSON files that encode resume-related information, including but not limited to professional experience and academic history.
 
 ---
 
@@ -79,9 +79,8 @@ type EducationJson = EducationEntry[];
 
 ## Notes
 
-- All file paths (`logo_path`, `certificate`) are relative to the public root in a React environment.
+- All file paths (`logo_path`, `certificate`) are relative to the public root.
 - Both files are treated as typed JSON modules with the assumption that `resolveJsonModule` is enabled in `tsconfig.json`.
-- Nullable fields are explicitly typed as `string | null` and must conform to this definition to avoid structural mismatches during static analysis.
 
 ```ts
 import jobs from './jobs.json';
