@@ -47,12 +47,17 @@ type JobsJson = JobEntry[];
 type EducationEntry = {
   degree: string;
   institution: string;
+
   date: string;
+  start_date: string;
+  end_date: string;
+
   gpa: string;
   honors: string | null;
   description: string | null;
+
   logo_path: string;
-  certificate: string;
+  certificate_path: string | null;
 };
 
 type EducationJson = EducationEntry[];
@@ -83,8 +88,8 @@ type EducationJson = EducationEntry[];
 - Both files are treated as typed JSON modules with the assumption that `resolveJsonModule` is enabled in `tsconfig.json`.
 
 ```ts
-import jobs from './jobs.json';
-import edu from './edu.json';
+import jobs from "./jobs.json";
+import edu from "./edu.json";
 
 const parsedJobs: JobsJson = jobs;
 const parsedEdu: EducationJson = edu;

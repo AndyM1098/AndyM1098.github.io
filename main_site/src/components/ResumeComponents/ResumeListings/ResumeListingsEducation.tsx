@@ -25,13 +25,12 @@ function InfoBoxImage({ ImageSrc, ImageAlt }: InfoBoxImageProp) {
 interface EducationData {
   degree: string;
   institution: string;
-  date: string;
+  dates: string;
   gpa: string;
   honors?: string | null;
   description?: string | null;
   logo_path: string;
-  certificate?: string | null;
-  certificate_label?: string | null;
+  certificate_path?: string | null;
 }
 
 function InfoBoxTextEdu({ json_data }: { json_data: EducationData }) {
@@ -40,20 +39,20 @@ function InfoBoxTextEdu({ json_data }: { json_data: EducationData }) {
       <div className="flex-grow-1 ms-3">
         <div className="d-inline-flex align-items-center mb-2">
           <h5 className="mb-0 text-primary">{json_data.degree}</h5>
-          {json_data.certificate && (
+          {json_data.certificate_path && (
             <a
-              href={json_data.certificate}
+              href={json_data.certificate_path}
               target="_blank"
               className="ms-2 text-decoration-none text-secondary fw-normal small"
               rel="noopener noreferrer"
             >
-              (View Certificate <i className="bi bi-box-arrow-up-right"></i>)
+              (View Certificate)
             </a>
           )}
         </div>
 
         <p className="mb-1 text-muted fst-italic">{json_data.institution}</p>
-        <p className="mb-1 text-secondary">{json_data.date}</p>
+        <p className="mb-1 text-secondary">{json_data.dates}</p>
         <p className="mb-0">
           <strong>GPA:</strong> {json_data.gpa} {json_data.honors}
         </p>

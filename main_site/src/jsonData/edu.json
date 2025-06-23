@@ -1,25 +1,34 @@
 [
   {
     "degree": "Master of Science in Computer Science", 
-    "institution": "University of Tennessee – Knoxville, TN", 
-    "date": "Aug 2023 – Dec 2024",
+    "institution": "University of Tennessee",
+    "location"   : "Knoxville, TN",
+    "start_date" : "08-2023",
+    "end_date"  : "12-2024",
+    "dates": "Aug 2023 – Dec 2024",
     "gpa": "3.19",
     "logo_path": "/logos/Tennessee_Volunteers_logo.svg.png",
-    "certificate": "/certficates/mast_cert.pdf"
+    "certificate_path": "/certficates/mast_cert.pdf"
   },
   {
     "degree": "Bachelor of Science in Computer Science",
-    "institution": "University of Tennessee – Knoxville, TN",
-    "date": "Aug 2020 – Jun 2023",
+    "institution": "University of Tennessee",
+    "location"   : "Knoxville, TN",
+    "start_date" : "08-2020",
+    "end_date"   : "06-2023",
+    "dates": "Aug 2020 – Jun 2023",
     "gpa": "3.59",
     "honors": "cum laude",
     "logo_path": "/logos/Tennessee_Volunteers_logo.svg.png",
-    "certificate": "/certficates/bach_cert.pdf"
+    "certificate_path": "/certficates/bach_cert.pdf"
   },
   {
     "degree": "Associate Coursework in Computer Science",
-    "institution": "Queensborough Community College - Bayside, NY",
-    "date": "Aug 2018 – June 2020",
+    "institution": "Queensborough Community College",
+    "location"   : "Bayside, NY",
+    "start_date"  : "08-2018",
+    "end_date":"06-2020",
+    "dates": "Aug 2018 – June 2020",
     "gpa": "3.55",
     "description": "Completed 59 credits before transferring to UTK",
     "logo_path": "/logos/qcc_logo.jpeg"

@@ -30,6 +30,7 @@ function Jobs() {
             {/* Right: Text content */}
             <div className="d-flex flex-column m-1">
               <h5 className="text-primary">{item.job_title}</h5>
+              <p className="mb-0 text-secondary">{item.company}</p>
               <div className="d-inline-flex align-items-center mb-2">
                 <p className="mb-0 text-secondary">{item.location}</p>
                 <span className="mx-2" style={{ color: "black" }}>•</span>
