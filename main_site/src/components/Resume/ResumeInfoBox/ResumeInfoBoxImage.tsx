@@ -12,6 +12,7 @@ function ResumeInfoBoxImage({ ImageSrc}: InfoBoxImageProp){
         <div className="m-3">
           <img
             src={ImageSrc}
+            alt="Company Logo"
             className="img-fluid"
             style={{ maxWidth: "100px" }}
           />

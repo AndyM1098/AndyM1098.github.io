@@ -28,7 +28,7 @@ function ResumeHeadBanner() {
           <div className="col-md-2 text-center mb-3 mb-md-0">
             <img
               src="your-headshot.jpg"
-              alt="Your Photo"
+              alt="Head"
               className="img-fluid rounded-circle"
               style={{ maxWidth: "120px" }}
             />

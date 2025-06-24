@@ -1,9 +1,6 @@
 import ResumeListingsEducation from "./ResumeListings/ResumeListingsEducation";
 import Jobs from "./ResumeListings/ResumeListingsJobs";
 
-const LISTING_TYPE_EDUCATION = "education";
-const LISTING_TYPE_JOBS = "jobs";
-
 interface ResumeSectionListingsProp {
   listing_type: string;
 }
