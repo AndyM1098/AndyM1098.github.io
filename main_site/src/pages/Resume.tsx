@@ -1,7 +1,5 @@
-// import "../components/ResumeComponents/ResumeHeadBanner.tsx";
-
-import ResumeSections from "../components/ResumeComponents/ResumeSections";
-import ResumeHeadBanner from "../components/ResumeComponents/ResumeHeadBanner";
+import ResumeSections from "../components/Resume/ResumeSections";
+import ResumeHeadBanner from "../components/Resume/ResumeHeadBanner";
 
 function Resume() {
   return (
