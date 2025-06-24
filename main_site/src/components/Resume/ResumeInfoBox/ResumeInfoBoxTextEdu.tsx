@@ -1,6 +1,3 @@
-
-
-
 interface ResumeInfoBoxTextEduProp {
   degree: string;
   institution: string;
@@ -12,7 +9,11 @@ interface ResumeInfoBoxTextEduProp {
   certificate_path?: string | null;
 }
 
-function ResumeInfoBoxTextEdu({ json_data }: { json_data: ResumeInfoBoxTextEduProp}) {
+function ResumeInfoBoxTextEdu({
+  json_data,
+}: {
+  json_data: ResumeInfoBoxTextEduProp;
+}) {
   return (
     <>
       <div className="flex-grow-1 ms-3">
@@ -35,14 +36,11 @@ function ResumeInfoBoxTextEdu({ json_data }: { json_data: ResumeInfoBoxTextEduPr
         <p className="mb-0">
           <strong>GPA:</strong> {json_data.gpa} {json_data.honors}
         </p>
-        {json_data.description && 
-            <ul className="ul-list">
-                <li className="list-item">
-                    {json_data.description}    
-                </li>
-            </ul>
-        }
-        
+        {json_data.description && (
+          <ul className="ul-list">
+            <li className="list-item">{json_data.description}</li>
+          </ul>
+        )}
       </div>
     </>
   );
