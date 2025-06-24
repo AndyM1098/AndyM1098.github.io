@@ -4,7 +4,7 @@ function Footer(){
 
     return(
         <>
-            <p>test</p>
+            <p>Footer</p>
         </>
     );
 
