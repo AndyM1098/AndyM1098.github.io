@@ -1,10 +1,10 @@
+import ContactMeMain from "../components/ContactMe/ContactMeMain";
+
 function ContactMe(){
     return(
         <>
             <div className="container">
-
-                <p></p>
-
+                <ContactMeMain/>
             </div>
         </>
     );
