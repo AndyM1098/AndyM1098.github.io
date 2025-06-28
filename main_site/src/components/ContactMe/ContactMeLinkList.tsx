@@ -1,10 +1,18 @@
+import ContactMeLinkListlinks from "./ContactMeLinkListLinks";
 
 function ContactMeLinkList(){
 
     return(
 
         <>
-            <p>Link list</p>
+            <div className="container text-center">
+
+                <div className="h1">Links</div>
+                <div>
+                    <ContactMeLinkListlinks />
+                </div>
+
+            </div>
         </>
     );
 }
