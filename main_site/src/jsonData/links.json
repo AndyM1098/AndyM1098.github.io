@@ -1,12 +1,14 @@
 [
     {
-        "name_text" : "Github",
+        "name_text" : "Github/AndyM.1098",
         "url" : "https://github.com/AndyM1098",
-        "link_text" : "GitHub/Andym.1098"
+        "link_text" : "GitHub/Andym.1098",
+        "logo_path" : "/logos/github_logo_90_90.png"
     },
     {
-        "name_text" : "Linkedin",
+        "name_text" : "Linkedin/Andrew M",
         "url" : "https://www.linkedin.com/in/andrew-mueller-0a35b2180",
-        "link_text" : "Linkden.com/myProfile"
+        "link_text" : "Linkden.com/myProfile",
+        "logo_path" : "/logos/linkedin_logo_90_90.png"
     }
 ]
