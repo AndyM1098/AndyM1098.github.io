@@ -1,70 +1,126 @@
+import React from "react";
 
-interface FormInfoFieldProp{
-    text : string,
-    field_id : string,
-    field_type?: string // Defaults to "text"
+interface FormInfoFieldProp {
+  text: string;
+  field_id: string;
+  field_type?: string;
+  field_required?: boolean;
 }
 
-function FormInfoField({text, field_id, field_type = "text"}: FormInfoFieldProp){
-    return(
-        <>
-            <div className="mb-3">
-                <label className="form-label">{text}</label>
-                <input type={field_type} className="form-control" id={field_id}/>
-            </div>
-        </>
-    )
+// Fixed width for JSON keys to align inputs
+const KEY_WIDTH = "21ch";
+const FIELD_WIDTH = "35ch";
 
-}
-
-function EmailForm() {
+export function FormInfoField({
+  text,
+  field_id,
+  field_type = "text",
+  field_required = true,
+}: FormInfoFieldProp) {
   return (
-    <>
-        <form>
-            {/* Misc Fields */}
-            <FormInfoField text="Name" field_id="ContactMeEmailFormName" />
-            <FormInfoField text="Email" field_id="ContactMeEmailFormEmail" field_type="email" />
-            <FormInfoField text="Phone Number (Optional)" field_id="ContactMeEmailFormPhone"/>
-            <FormInfoField text="Linkedin Profile" field_id="ContactMeEmailFormLinkedin" />
-            <FormInfoField text="Header" field_id="ContactMeEmailFormHeader" />
-
-            {/* Message Box */}
-            <div>
-                <label className="form-label">Message</label>
-                <div className="input-group">
-                    <textarea className="form-control" aria-label="With textarea" id="ContactMeEmailFormMessage" required></textarea>
-                </div>
-            </div>
-            
-            <button type="submit" className="mt-3 btn btn-primary">Submit</button>
-        
-        </form>
-    </>
-  );
-}
-
-function ContactMeEmailForm() {
-  return (
-    <>
-      <div>
-        <div>
-          <h1>Email Form</h1>
-          <p>
-            Fill out the below fields, with a short message! I will reply as
-            soon as I can!
-          </p>
-        <div className="p-1 bg-info d-inline">
-            This is not yet functional!
-        </div>
-        </div>
-
-        <div>
-            <EmailForm />
-        </div>
-
+    <div
+      className="mb-3 d-flex align-items-center"
+      style={{ fontFamily: "'Fira Code', monospace" }}
+    >
+      <div
+        className="align-items-center me-1"
+        style={{ width: KEY_WIDTH, whiteSpace: "nowrap" }}
+      >
+        <span className="text-primary">"</span>
+        <label htmlFor={field_id} className="form-label mb-0 mx-1 text-primary">
+          {text}
+        </label>
+        <span className="text-primary">"</span>
+        <span className="text-dark">:</span>
       </div>
-    </>
+
+      <span style={{ color: "blue" }}>"</span>
+      <input
+        type={field_type}
+        id={field_id}
+        className="form-control me-1"
+        required={field_required}
+        style={{ color: "blue", width: FIELD_WIDTH}}
+      />
+      <span className="text-success">"</span>
+
+      {!field_required && <span className="text-muted"> | null</span>}
+      <span>,</span>
+    </div>
   );
 }
 
-export default ContactMeEmailForm;
+export function EmailForm() {
+  return (
+    <form>
+      <FormInfoField text="Name" field_id="ContactMeEmailFormName" />
+      <FormInfoField
+        text="Email"
+        field_id="ContactMeEmailFormEmail"
+        field_type="email"
+      />
+      <FormInfoField
+        text="Phone Number"
+        field_id="ContactMeEmailFormPhone"
+        field_required={false}
+      />
+      <FormInfoField
+        text="Linkedin Profile"
+        field_id="ContactMeEmailFormLinkedin"
+        field_required={false}
+      />
+      <FormInfoField text="Header" field_id="ContactMeEmailFormHeader" />
+
+      {/* Message Box */}
+      <div className="mb-3 d-flex align-items-start" style={{ fontFamily: "'Fira Code', monospace" }}>
+        {/* Key container */}
+        <div
+          className="d-flex align-items-center me-1"
+          style={{ width: KEY_WIDTH, whiteSpace: "nowrap" }}
+        >
+          <span>"</span>
+          <label
+            htmlFor="ContactMeEmailFormMessage"
+            className="form-label mb-0 mx-1"
+          >
+            Message
+          </label>
+          <span>"</span>
+          <span>:</span>
+        </div>
+
+        <div className="d-flex align-items-center">
+          <span style={{color: "blue"}}>"</span>
+          <textarea
+            id="ContactMeEmailFormMessage"
+            required={true}
+            className="form-control me-1" 
+            style={{color: "blue", width: FIELD_WIDTH}}
+          />
+          <span style={{color: "blue"}}>"</span>
+        </div>
+      </div>
+
+      <button type="submit" className="btn btn-primary">
+        Submit
+      </button>
+    </form>
+  );
+}
+
+export default function ContactMeEmailForm() {
+  return (
+    <section className="p-4">
+      <header className="mb-4">
+        <h1>Email Form</h1>
+        <div className="p-1 bg-info d-inline">This is not yet functional!</div>
+        <p>
+          Fill out the below fields with a short message! I will reply as soon
+          as I can.
+        </p>
+        
+      </header>
+      <EmailForm />
+    </section>
+  );
+}
