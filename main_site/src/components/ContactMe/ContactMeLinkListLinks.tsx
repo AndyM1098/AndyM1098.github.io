@@ -5,13 +5,14 @@ function ContactMeLinkListlinks() {
     <>
       {linkData.map((links, idx) => (
         <a
+            key={idx}
           className="link-stretched"
-            href={links.url}
+          href={links.url}
           target="_blank"
           rel="noopener noreferrer external"
         >
           <div
-            key={idx}
+            
             className="d-flex align-items-center bg-primary-subtle my-3 rounded-pill border border-5 border-primary justify-content-left"
           >
             <div className="h1 ms-5">{links.name_text}</div>
