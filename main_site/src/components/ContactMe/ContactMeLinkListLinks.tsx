@@ -1,25 +1,32 @@
 import linkData from "../../jsonData/links.json";
 
-function ContactMeLinkListlinks(){
-
-    return(
-        <>
-            {  
-                linkData.map((links, idx) =>
-                    <div key={idx}>
-                            <div className="d-flex justify-content-center mb-2">
-                                <p className="mb-0">{links.name_text}</p>
-                                <p className="mb-0">:</p>
-                                <a className="mb-0" href={links.url} target="_blank" rel="noopener noreferrer external">
-                                    {links.link_text}
-                                </a>
-                            </div>
-                    </div>
-                )
-            }
-        </>
-    );
+function ContactMeLinkListlinks() {
+  return (
+    <>
+      {linkData.map((links, idx) => (
+        <a
+          className="link-stretched"
+            href={links.url}
+          target="_blank"
+          rel="noopener noreferrer external"
+        >
+          <div
+            key={idx}
+            className="d-flex align-items-center bg-primary-subtle my-3 rounded-pill border border-5 border-primary justify-content-left"
+          >
+            <div className="h1 ms-5">{links.name_text}</div>
+            <div className="ms-5">
+              <img
+                src={links.logo_path}
+                className="img-fluid"
+                alt="Description"
+              ></img>
+            </div>
+          </div>
+        </a>
+      ))}
+    </>
+  );
 }
 
 export default ContactMeLinkListlinks;
-

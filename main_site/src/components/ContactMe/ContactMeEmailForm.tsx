@@ -39,8 +39,6 @@ function EmailForm() {
             <button type="submit" className="mt-3 btn btn-primary">Submit</button>
         
         </form>
-
-
     </>
   );
 }
@@ -55,6 +53,9 @@ function ContactMeEmailForm() {
             Fill out the below fields, with a short message! I will reply as
             soon as I can!
           </p>
+        <div className="p-1 bg-info d-inline">
+            This is not yet functional!
+        </div>
         </div>
 
         <div>

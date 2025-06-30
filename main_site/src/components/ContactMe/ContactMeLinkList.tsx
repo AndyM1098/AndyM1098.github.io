@@ -5,10 +5,11 @@ function ContactMeLinkList(){
     return(
 
         <>
-            <div className="container text-center">
+
+            <div>
 
                 <div className="h1">Links</div>
-                <div>
+                <div className="d-block py-3 w-50">
                     <ContactMeLinkListlinks />
                 </div>
 
